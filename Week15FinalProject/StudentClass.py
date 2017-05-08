@@ -7,14 +7,14 @@
 #Created: 8 MAY 2017
 #Author: Rick Miller <rick@rickthegeek.com>
 
-class StudentClass(object):
+class Student(object):
     """This is a class for the student object for CIS 177 Week 15 final project"""
 
-    def __init__(self,firstName,lastName,gpa,major):
+    def __init__(self,firstName ='UNKNOWN',lastName = 'UNKNOWN',gpa = 0,major='Undeclared'):
         self.firstName = firstName
         self.lastName = lastName
         self.gpa = float(gpa)
         self.major = major
 
     def __str__(self):
-        return 'First Name: %d\nLast Name: %d\nGPA: %d\nMajor: %d' % (self.firstName, self.lastName, self.gpa, self.major)
+        return 'First Name: %s\nLast Name: %s\nGPA: %.2f\nMajor: %s' % (self.firstName, self.lastName, self.gpa, self.major)
